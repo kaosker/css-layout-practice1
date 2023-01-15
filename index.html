@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+    <body>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+            <legend>Add user</legend>
+                <div class="container">
+                    <div>
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
+
+                    <div>
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email_address">
+                    </div>
+                    <div class="statusDateWrapper">
+                        <div class="status">
+                            <label for="role">Status</label>
+                            <select id="role" name="user_role_name">
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                            <option value="guest">Guest</option>
+                            </select>
+                        </div>
+
+                        <div class="date">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Choose your favorite Web language:</p>
+                        <div class="radioButtonsFlex">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label class="radioButtons" for="html">HTML</label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label class="radioButtons" for="css">CSS</label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label class="radioButtons" for="javascript">JavaScript</label>
+                        </div>
+                    </div>
+
+                    <div class="comments">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+
+                    <div class="checkBoxes">
+                        <div class="signUp">
+                            <input type="checkbox" id="signup" name="signup" value="Signup">
+                            <label for="signup">Sign up for news</label><br>
+                        </div>
+                        <div class="terms">
+                            <input type="checkbox" id="terms" name="terms" value="Terms">
+                            <label for="terms"> Agree to terms</label>
+                        </div>
+                        </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
